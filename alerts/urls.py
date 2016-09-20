@@ -19,11 +19,11 @@ from rest_framework import routers
 from .views import AlertTypeViewSet, AlertViewSet, EntityTypeViewSet, EntityViewSet, AppViewSet
 
 router = routers.DefaultRouter()
-router.register(r'alerttype', AlertTypeViewSet)
-router.register(r'alert', AlertViewSet)
-router.register(r'entitytype', EntityTypeViewSet)
-router.register(r'entity', EntityViewSet)
-router.register(r'app', AppViewSet)
+router.register(r'alerttypes', AlertTypeViewSet)
+router.register(r'alerts', AlertViewSet)
+router.register(r'entitytypes', EntityTypeViewSet)
+router.register(r'entities', EntityViewSet)
+router.register(r'apps', AppViewSet)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
