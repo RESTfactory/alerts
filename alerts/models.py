@@ -37,7 +37,7 @@ class AlertType(models.Model):
         return self.name
 
 class Alert(models.Model):
-    name = models.CharField(max_length=30)
+    name = models.CharField(max_length=30, blank=True, null=True)
     description = models.CharField(max_length=30)
     alert_type = models.ForeignKey(AlertType)
     created_at = models.DateTimeField(auto_now_add=True)
