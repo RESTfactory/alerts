@@ -19,7 +19,7 @@ class EntityTypeSerializer(serializers.ModelSerializer):
 class EntitySerializer(serializers.ModelSerializer):
     class Meta:
         model = Entity
-        fields = ('url', 'id', 'name', 'description', 'entity_type', 'created_at', 'updated_at')
+        fields = ('code', 'name', 'description', 'entity_type', 'created_at', 'updated_at')
 
 class AppSerializer(serializers.ModelSerializer):
     class Meta:

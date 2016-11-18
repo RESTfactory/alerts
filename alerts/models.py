@@ -19,6 +19,7 @@ class EntityType(models.Model):
         return self.name
 
 class Entity(models.Model):
+    code = models.CharField(max_length=40, unique=True, primary_key=True)
     name = models.CharField(max_length=30)
     description = models.CharField(max_length=30, blank=True)
     entity_type = models.ForeignKey(EntityType)

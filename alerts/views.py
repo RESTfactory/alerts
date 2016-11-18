@@ -17,6 +17,7 @@ class EntityTypeViewSet(viewsets.ModelViewSet):
 class EntityViewSet(viewsets.ModelViewSet):
     queryset = Entity.objects.all()
     serializer_class = EntitySerializer
+    lookup_field = 'code'
 
 class AppViewSet(viewsets.ModelViewSet):
     queryset = App.objects.all()
